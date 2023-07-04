@@ -19,9 +19,9 @@
 <body>
     <!-- //스킵 네비게이션 -->
     <div id="skip">
-        <a href="#cont-nav">전체 메뉴 바로가기</a>
-        <a href="#cont-ban">베너 영역 바로가기</a>
-        <a href="#cont-cont">컨텐츠 영역 바로가기</a>
+        <a href="#cont_nav">전체 메뉴 바로가기</a>
+        <a href="#cont_ban">베너 영역 바로가기</a>
+        <a href="#cont_cont">컨텐츠 영역 바로가기</a>
     </div>
     <!-- //스킵 네비게이션 -->
 
@@ -60,7 +60,7 @@
         <!-- //header -->
 
         <div id="contents">
-            <div id="cont-nav">
+            <div id="cont_nav">
                 <div class="container">
                     <h2 class="ir_su">전체메뉴</h2>
                     <div class="nav">
@@ -117,8 +117,8 @@
                     </div>
                 </div> 
             </div>
-            <!-- //cont-nav -->
-            <div id="cont-tit">
+            <!-- //cont_nav -->
+            <div id="cont_tit">
                 <div class="container">
                     <div class="tit">
                         <h2>"나는 원숭이다!"</h2>
@@ -126,8 +126,8 @@
                     </div>
                 </div>
             </div>
-            <!-- //cont-tit -->
-            <div id="cont-ban">
+            <!-- //cont_tit -->
+            <div id="cont_ban">
                 <div class="container">
                     <div class="ban">
                         <a href="#" class="prev"><span class="ir_pm">이전 이미지</span></a>
@@ -140,7 +140,7 @@
                     </div>
                 </div>
             </div>
-            <!-- //cont-ban -->
+            <!-- //cont_ban -->
             <div id="cont_cont">
                 <div class="container">
                     <div class="cont">
@@ -398,7 +398,7 @@
                     </div>
                 </div>
             </div> 
-            <!-- //cont-cont -->
+            <!-- //cont_cont -->
         </div>
         <!-- //contents -->
 
@@ -432,5 +432,26 @@
         <!-- //footer -->
     </div>
     <!-- //wrap -->
+
+    <!-- script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+    <script type="text/javascript">
+        // 버튼을 클릭하면 전체 메뉴를 보이게 하세요.
+        $(".tit .btn").click(function(e){
+            e.preventDefault();
+            // $("#cont_nav").css("display", "block");
+            // $("#cont_nav").show();
+            // $("#cont_nav").fadeIn();
+            // $("#cont_nav").slideDown();
+            // $("#cont_nav").toggle();
+            // $("#cont_nav").fadeToggle();
+            $("#cont_nav").slideToggle(200);
+            $(this).toggleClass("on");
+        });
+    </script>
+
+
 </body>
 </html>
+
+
